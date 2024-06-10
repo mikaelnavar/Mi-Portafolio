@@ -316,7 +316,7 @@ body {
     flex-direction: column;
 }
 
-.education-container {
+.education__container {
     display: flex;
     margin-top: 30px;
     flex-direction: row;
@@ -338,7 +338,7 @@ body {
 }
 
 
-.education-item-img img {
+.education__img img {
     width: 110px;
     height: 110px;
     flex: none;
