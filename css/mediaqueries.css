@@ -1,0 +1,265 @@
+/*Estilos para los media querie tanto para mobiles como para tables*/
+
+/*Media querie de un max de 700px*/
+
+@media (max-width: 700px) {
+
+    /*Menu list*/
+    /* Estilo para el contenedor del botón de menú y la lista */
+    .menu__container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navbar__list {
+        display: none;
+    }
+
+    /*Formato para la sección principal*/
+    .title-div {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 5px;
+
+    }
+
+    .title-information {
+        font-size: 28px;
+    }
+
+    .title-container {
+        display: flex;
+        width: auto;
+        align-self: center;
+    }
+
+    .list-socialmedia {
+        display: flex;
+        flex-flow: row;
+        justify-content: center;
+        align-self: center;
+        flex: 1;
+        margin-top: 15px;
+    }
+
+
+
+    /*Section sobre mí*/
+    .about-container {
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+
+    }
+
+
+    /*Section skills y hobbies*/
+
+    .skills-container,
+    .hobbies-container {
+        width: 80%;
+        flex-wrap: wrap;
+        flex: none;
+    }
+
+    /*Section education*/
+    .education-container {
+        width: 60%;
+        flex-wrap: wrap;
+    }
+
+    .education-box {
+        flex-wrap: wrap;
+        display: flex;
+        width: 60%;
+        flex: none
+    }
+
+
+
+    /*Experiencia*/
+
+    .experience-box {
+        display: flex;
+        flex-direction: row;
+        /* Cambia a fila en lugar de columna */
+        align-items: center;
+        /* Alinea verticalmente en el centro */
+        justify-content: space-between;
+        /* Distribuye el espacio entre los elementos */
+        margin-bottom: 10px;
+
+    }
+
+    .experience-box img {
+        width: 35%;
+        max-width: 200px;
+        height: auto;
+        margin-right: 20px
+    }
+
+    .experience-info {
+        display: flex;
+        justify-content: flex-start;
+        /* Centra verticalmente */
+        align-items: flex-start;
+        flex: 1;
+    }
+
+    .experience-info-container {
+        display: flex;
+        justify-content: flex-start;
+        /* Centra verticalmente */
+        align-items: flex-start;
+        flex: 1;
+    }
+
+    /*Contacto la imagen se oculto para que solo los textarea estuvieran en la pantalla*/
+
+    .contact-container {
+        display: flex;
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+        align-self: center;
+    }
+
+    .contact-left {
+        display: flex;
+        width: auto;
+        height: auto;
+        justify-content: center;
+        align-self: center;
+    }
+
+    .contact-information-item {
+        display: flex;
+        flex-direction: column-reverse;
+        margin-bottom: 10px;
+    }
+
+    .contact-information-item img {
+        display: flex;
+        width: 20px;
+        margin-bottom: 5px;
+    }
+
+
+    .contact-information {
+        flex-direction: column;
+        text-align: left;
+
+    }
+
+}
+
+/*Diseño se media queries para pantallas con un máximo de 1240px*/
+@media (max-width: 1240px) {
+
+
+    /*Section principal*/
+
+    .title-div {
+        width: 90%;
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: content-box;
+        padding: 20px;
+        flex-direction: column;
+
+    }
+
+    .title-container {
+        display: flex;
+        width: auto;
+        justify-content: center;
+        align-items: flex-start;
+        margin: 0 auto;
+    }
+
+    /*Section sobre mí*/
+
+    .about-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    /*Skills, Hobbies y Education */
+    .skills-container,
+    .hobbies-container,
+    .education-container {
+        width: auto;
+        flex-wrap: wrap;
+        flex: 1;
+    }
+
+    /*Experiencia*/
+
+    .experience-box {
+        display: flex;
+        justify-content: center;
+        /* Centra horizontalmente */
+        align-items: center;
+        /* Centra verticalmente */
+        flex-wrap: wrap;
+        margin: 0 auto;
+        /* Centra horizontalmente */
+        max-width: 700px;
+        /* Ajusta el ancho máximo según sea necesario */
+    }
+
+    .experience-box img {
+        width: 80%;
+        /* O ajusta según tus necesidades */
+        height: auto;
+        margin: 15px;
+    }
+
+    .experience-info {
+        display: flex;
+        flex-direction: column;
+        margin-left: 10px;
+        /* Ajusta el margen izquierdo según sea necesario */
+        text-align: center;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .experience-info-container {
+        display: flex;
+        flex-direction: column;
+        order: 2;
+        margin-left: 10px;
+        /* Ajusta el margen izquierdo según sea necesario */
+        text-align: center;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    /*Contacto la imagen se oculto para que solo los textarea estuvieran en la pantalla*/
+    .contact-left {
+        display: block;
+    }
+
+    .contact-information {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        text-align: left;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .contact-form {
+        display: flex;
+
+    }
+
+}
